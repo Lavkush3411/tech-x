@@ -5,7 +5,7 @@ import { SiNestjs, SiMongodb, SiPostgresql, SiNextdotjs } from "react-icons/si";
 function Technologies() {
   return (
     <section className="py-20 text-center bg-gray-900" id="technologies">
-      <h2 className="text-4xl font-bold">Technologies We Use</h2>
+      <h2 className="text-4xl font-bold text-white">Technologies We Use</h2>
       <div className="flex justify-center items-center gap-8 mt-8">
         <FaReact size={50} color="#61DAFB" />
         <FaNodeJs size={50} color="#68A063" />
