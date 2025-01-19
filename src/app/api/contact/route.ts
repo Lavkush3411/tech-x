@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export async function contact(data) {
+export async function contact(data: string) {
   const { name, email, message } = JSON.parse(data);
 
   // Validate fields

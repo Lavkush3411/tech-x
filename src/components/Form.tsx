@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Form, Input, Button, Spin } from "antd";
+import { Form, Input, Button } from "antd";
 import { contact } from "@/app/api/contact/route";
 import toast from "react-hot-toast";
 
