@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Form, Input, Button } from "antd";
-import { contact } from "@/app/api/contact/route";
+import { contact } from "@/app/actions/actions";
 import toast from "react-hot-toast";
 
 function DynamicForm() {
