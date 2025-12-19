@@ -1,9 +1,9 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+// import Navbar from "@/components/Navbar";
+// import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,13 +30,34 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <style>
+    {`body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    .mono {
+      font-family: 'JetBrains+Mono', monospace;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #60A5FA 0%, #A855F7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);`
+    }
+  </style>
+  </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AntdRegistry>
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </AntdRegistry>
       </body>
     </html>
