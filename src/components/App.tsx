@@ -466,10 +466,15 @@ const App: React.FC = () => {
 
       {/* Final CTA */}
       <section id="contact" className="py-32 px-6">
-        <div className="max-w-7xl mx-auto glass p-12 lg:p-24 rounded-[4rem] relative overflow-hidden bg-black/50 border-white/5">
+        <div
+          className="max-w-7xl mx-auto glass 
+  p-6 sm:p-10 lg:p-24
+  rounded-3xl sm:rounded-[4rem]
+  relative overflow-hidden bg-black/50 border-white/5"
+        >
           <div className="absolute -top-24 -right-24 w-[500px] h-[500px] bg-blue-600/10 blur-[180px] rounded-full"></div>
 
-          <div className="grid lg:grid-cols-2 gap-24">
+          <div className="grid lg:grid-cols-2 gap-10 md:gap-16 lg:gap-24 [&>*]:min-w-0">
             <div>
               <h2 className="text-6xl md:text-8xl font-black text-white mb-10 leading-[0.85] tracking-tighter">
                 Let&apos;s Build <br />
@@ -491,7 +496,7 @@ const App: React.FC = () => {
                     </p>
                     <a
                       href="mailto:Lkyadav090@gmail.com"
-                      className="text-2xl font-black text-white hover:text-blue-400 transition-all"
+                      className="text-l font-black text-white hover:text-blue-400 transition-all"
                     >
                       Lkyadav090@gmail.com
                     </a>
