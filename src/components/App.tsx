@@ -8,11 +8,11 @@ import {
   SKILL_GROUPS,
   TESTIMONIALS,
   METHODOLOGY,
+  SOCIAL_LINKS,
 } from "./constants";
 import {
   CheckCircle2,
   Linkedin,
-  Github,
   Mail,
   Code2,
   Server,
@@ -59,7 +59,7 @@ const App: React.FC = () => {
           </div>
 
           <h1 className="text-6xl md:text-6xl font-black text-white tracking-tighter mb-14 leading-[0.85] text-balance">
-            Your Partner in {" "}
+            Your Partner in{" "}
             <span className="gradient-text">Modern Web and App </span>{" "}
             Development
           </h1>
@@ -229,12 +229,12 @@ const App: React.FC = () => {
               </h2>
               <p className="text-xl text-slate-400 leading-relaxed">
                 Specialized in modern web and mobile stacks, focusing on the
-                core technologies that drive business growth.
-                From responsive web apps to feature-rich mobile apps, we
-                leverage the latest technologies to create seamless user
-                experiences that drive engagement and growth. We work closely
-                with our clients to ensure our solutions align with their
-                business goals, providing both functionality and usability.
+                core technologies that drive business growth. From responsive
+                web apps to feature-rich mobile apps, we leverage the latest
+                technologies to create seamless user experiences that drive
+                engagement and growth. We work closely with our clients to
+                ensure our solutions align with their business goals, providing
+                both functionality and usability.
               </p>
               <br></br>
               <p className="text-xl text-slate-400 mb-12 leading-relaxed">
@@ -531,7 +531,7 @@ const App: React.FC = () => {
                       Social Network
                     </p>
                     <a
-                      href="https://linkedin.com/in/lavkush-yadav116b53205"
+                      href="https://www.linkedin.com/in/lavkush-yadav-116b53205"
                       className="text-2xl font-black text-white hover:text-emerald-400 transition-all"
                     >
                       Lavkush Yadav
@@ -566,15 +566,20 @@ const App: React.FC = () => {
                 high-growth ventures and global enterprises.
               </p>
               <div className="flex gap-6">
-                {[Github, Linkedin, Mail, Globe].map((Icon, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="w-14 h-14 glass rounded-[1.2rem] flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600/10 transition-all border-white/10"
-                  >
-                    <Icon className="w-6 h-6" />
-                  </a>
-                ))}
+                {SOCIAL_LINKS.map((item, i) => {
+                  const Icon = item.icon;
+                  return (
+                    <a
+                      key={i}
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-14 h-14 glass rounded-[1.2rem] flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600/10 transition-all border-white/10"
+                    >
+                      <Icon className="w-6 h-6" />
+                    </a>
+                  );
+                })}
               </div>
             </div>
 

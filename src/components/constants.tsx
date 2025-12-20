@@ -171,75 +171,75 @@ export const PROJECTS: Project[] = [
     link: "https://nonotion.mansionhub.in",
   },
 
-  {
-    id: "p2",
-    title: "SwiftLog Logistics Hub",
-    description: "Real-time vehicle tracking and route optimization dashboard.",
-    longDescription:
-      "A sophisticated React dashboard for fleet management. Powered by an Express.js backend and a PostgreSQL database with PostGIS for location-based query optimization.",
-    category: "Backend",
-    clientSector: "Logistics",
-    tags: ["React", "Express", "PostgreSQL", "Socket.io", "AWS EC2"],
-    features: ["Live GPS Tracking", "Geofencing Alerts", "Route Optimization"],
-    techHighlights: [
-      "PostGIS indexing",
-      "High-frequency WebSockets",
-      "Redis-backed pub/sub",
-    ],
-    imageUrl:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
-    stats: { label: "Fleet Size", value: "10,000+" },
-  },
-  {
-    id: "p3",
-    title: "BioLock FinTech App",
-    description: "Digital banking mobile app with hardware-level security.",
-    longDescription:
-      "A secure mobile payment solution developed with React Native. It integrates deeply with AWS Cognito for authentication and uses a Lambda-based microservices mesh for transaction processing.",
-    category: "Mobile",
-    clientSector: "Finance",
-    tags: ["React Native", "AWS Cognito", "Node.js", "DynamoDB", "Expo"],
-    features: [
-      "FaceID/Fingerprint Auth",
-      "P2P Instant Payments",
-      "Real-time Ledgers",
-    ],
-    techHighlights: [
-      "Native Security Modules",
-      "JWT Rotation",
-      "Idempotent Transactions",
-    ],
-    imageUrl:
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
-    stats: { label: "Security Level", value: "Level 4" },
-  },
-  {
-    id: "p4",
-    title: "DataFlow Analytics CMS",
-    description:
-      "Enterprise content management with deep data analytics integration.",
-    longDescription:
-      "A custom CMS designed for heavy content workloads. It leverages MongoDB for flexible content modeling and React for a lightning-fast editorial experience.",
-    category: "Frontend",
-    clientSector: "Media / Publishing",
-    tags: ["React", "Node.js", "MongoDB", "AWS S3", "Redis"],
-    features: [
-      "Dynamic Content Types",
-      "Version History",
-      "AI Tagging Pipeline",
-    ],
-    techHighlights: [
-      "Rich Text Engine",
-      "Optimistic UI Updates",
-      "Multi-tenant Isolation",
-    ],
-    imageUrl:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-    stats: { label: "Monthly Traffic", value: "5M+" },
-  },
+  // {
+  //   id: "p2",
+  //   title: "SwiftLog Logistics Hub",
+  //   description: "Real-time vehicle tracking and route optimization dashboard.",
+  //   longDescription:
+  //     "A sophisticated React dashboard for fleet management. Powered by an Express.js backend and a PostgreSQL database with PostGIS for location-based query optimization.",
+  //   category: "Backend",
+  //   clientSector: "Logistics",
+  //   tags: ["React", "Express", "PostgreSQL", "Socket.io", "AWS EC2"],
+  //   features: ["Live GPS Tracking", "Geofencing Alerts", "Route Optimization"],
+  //   techHighlights: [
+  //     "PostGIS indexing",
+  //     "High-frequency WebSockets",
+  //     "Redis-backed pub/sub",
+  //   ],
+  //   imageUrl:
+  //     "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800",
+  //   stats: { label: "Fleet Size", value: "10,000+" },
+  // },
+  // {
+  //   id: "p3",
+  //   title: "BioLock FinTech App",
+  //   description: "Digital banking mobile app with hardware-level security.",
+  //   longDescription:
+  //     "A secure mobile payment solution developed with React Native. It integrates deeply with AWS Cognito for authentication and uses a Lambda-based microservices mesh for transaction processing.",
+  //   category: "Mobile",
+  //   clientSector: "Finance",
+  //   tags: ["React Native", "AWS Cognito", "Node.js", "DynamoDB", "Expo"],
+  //   features: [
+  //     "FaceID/Fingerprint Auth",
+  //     "P2P Instant Payments",
+  //     "Real-time Ledgers",
+  //   ],
+  //   techHighlights: [
+  //     "Native Security Modules",
+  //     "JWT Rotation",
+  //     "Idempotent Transactions",
+  //   ],
+  //   imageUrl:
+  //     "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
+  //   stats: { label: "Security Level", value: "Level 4" },
+  // },
+  // {
+  //   id: "p4",
+  //   title: "DataFlow Analytics CMS",
+  //   description:
+  //     "Enterprise content management with deep data analytics integration.",
+  //   longDescription:
+  //     "A custom CMS designed for heavy content workloads. It leverages MongoDB for flexible content modeling and React for a lightning-fast editorial experience.",
+  //   category: "Frontend",
+  //   clientSector: "Media / Publishing",
+  //   tags: ["React", "Node.js", "MongoDB", "AWS S3", "Redis"],
+  //   features: [
+  //     "Dynamic Content Types",
+  //     "Version History",
+  //     "AI Tagging Pipeline",
+  //   ],
+  //   techHighlights: [
+  //     "Rich Text Engine",
+  //     "Optimistic UI Updates",
+  //     "Multi-tenant Isolation",
+  //   ],
+  //   imageUrl:
+  //     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+  //   stats: { label: "Monthly Traffic", value: "5M+" },
+  // },
   {
     id: "p7",
-    title: "High-Freq Trading Engine",
+    title: "High-Freq Opinion Trading Platform",
     description: "Ultra-low latency opinion trading platform similar to Probo.",
     longDescription:
       "A High Performance opinion trading platform built for extreme speed. Uses React for a fluid frontend and the Axum Framework (Rust) for the backend to handle high-frequency trading with sub-millisecond precision.",
@@ -266,29 +266,34 @@ export const SKILL_GROUPS: SkillGroup[] = [
   {
     category: "Frontend Powerhouse",
     skills: [
-      "React 18+",
-      "Redux / Zustand",
+      "React / React Native",
+      "NextJs",
       "TypeScript",
       "Tailwind CSS",
       "Framer Motion",
+      "React Query",
     ],
     icon: <Layout className="w-5 h-5" />,
     level: "Expert",
   },
   {
     category: "Backend Excellence",
-    skills: ["Rust (Axum)", "NestJS", "Node.js", "Express.js", "Serverless"],
+    skills: ["NestJS", "Node.js", "Express.js", "Rust (Axum)", "Serverless"],
     icon: <Server className="w-5 h-5" />,
     level: "Architect",
   },
   {
     category: "AWS Cloud Services",
     skills: [
-      "Lambda",
+      "Lambda / AWS SAM",
       "DynamoDB",
       "EC2 / ECS",
       "S3 / CloudFront",
       "RDS (Postgres)",
+      "Cognito",
+      "SQS",
+      "SES",
+      "Route 53",
     ],
     icon: <Cloud className="w-5 h-5" />,
     level: "Advanced",
@@ -298,9 +303,10 @@ export const SKILL_GROUPS: SkillGroup[] = [
     skills: [
       "PostgreSQL",
       "MongoDB",
+      "DynamoDB",
       "Redis",
       "SQL Optimization",
-      "ORM (Prisma/TypeORM)",
+      "ORM (Prisma / Mongoose)",
     ],
     icon: <Database className="w-5 h-5" />,
     level: "Expert",
@@ -336,21 +342,51 @@ export const METHODOLOGY: MethodologyStep[] = [
 
 export const TESTIMONIALS: Testimonial[] = [
   {
-    id: "t1",
-    name: "David Aronson",
-    role: "Product Lead",
-    company: "FinSync Global",
+    id: "t3",
+    name: "Mukul Jha",
+    role: "Founder",
+    company: "MansionHub",
     content:
-      "TechX built our entire React-based banking portal and AWS Lambda backend. Their expertise in secure transactions is unmatched.",
-    avatar: "https://i.pravatar.cc/150?u=david",
+      "Our entire e-commerce platform was engineered end-to-end, from product catalog to secure checkout and real-time inventory. The performance, reliability, and attention to detail have been incredible.",
+    avatar: "https://i.pravatar.cc/150?u=fashion123",
+  },
+  // {
+  //   id: "t1",
+  //   name: " Aronson",
+  //   role: "Product Lead",
+  //   company: "FinSync Global",
+  //   content:
+  //     "TechX built our entire React-based banking portal and AWS Lambda backend. Their expertise in secure transactions is unmatched.",
+  //   avatar: "https://i.pravatar.cc/150?u=daAAA",
+  // },
+  // {
+  //   id: "t2",
+  //   name: "Elena Rodriguez",
+  //   role: "Founder",
+  //   company: "LogiFlow",
+  //   content:
+  //     "The real-time logistics dashboard they built with Express and WebSockets allowed us to scale our fleet by 300% without adding overhead.",
+  //   avatar: "https://i.pravatar.cc/150?u=elena",
+  // },
+];
+
+import { Github, Linkedin, Mail, Globe } from "lucide-react";
+
+export const SOCIAL_LINKS = [
+  {
+    icon: Github,
+    href: "https://github.com/Lavkush3411",
   },
   {
-    id: "t2",
-    name: "Elena Rodriguez",
-    role: "Founder",
-    company: "LogiFlow",
-    content:
-      "The real-time logistics dashboard they built with Express and WebSockets allowed us to scale our fleet by 300% without adding overhead.",
-    avatar: "https://i.pravatar.cc/150?u=elena",
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/lavkush-yadav-116b53205",
   },
+  {
+    icon: Mail,
+    href: "mailto:lkyadav090@gmail.com",
+  },
+  // {
+  //   icon: Globe,
+  //   href: "https://your-portfolio.com",
+  // },
 ];
