@@ -72,14 +72,58 @@ export const SERVICES: Service[] = [
       "Leveraging the full power of AWS to ensure your application is highly available and cost-effective. Expertise in Lambda serverless, DynamoDB modeling, and RDS scaling.",
     pillars: [
       "AWS Lambda & Serverless Framework",
+      "AWS EC2",
       "DynamoDB / Postgres / MongoDB",
       "S3 & CloudFront Distribution",
       "IAM & VPC Security Hardening",
+      "Cognito",
     ],
   },
 ];
 
 export const PROJECTS: Project[] = [
+  {
+    id: "p-staffsync",
+    title: "StaffSync Workforce Platform",
+    description:
+      "End-to-end workforce management SaaS for security agencies with live shift operations and multi-role control.",
+    longDescription:
+      "StaffSync is a scalable SaaS platform built to manage security guards, scheduling, real-time attendance, incident reporting, client sites, and workforce compliance. It supports multi-tenant organizations with role-based access, live activity dashboards, and automated operational workflows.",
+    category: "SaaS",
+    clientSector: "Security & Workforce Management",
+    tags: [
+      "React",
+      "Node.js / NestJS",
+      "PostgreSQL",
+      "Redis",
+      "AWS",
+      "WebSockets",
+    ],
+    features: [
+      "Real-time Shift Tracking",
+      "Geo Fencing of Sites",
+      "Google Maps Integration",
+      "Multi-role Access Control",
+      "Live Operations Dashboard",
+      "Guard Attendance & Check-ins",
+      "Incident & Report Management",
+      "Multi-tenant Architecture",
+    ],
+    techHighlights: [
+      "Mobile, Web and Backend",
+      "Event-driven workflow handling",
+      "Geo Fencing of Sites",
+      "Google Maps Integration",
+      "Real-time updates using WebSockets",
+      "Optimized queries and caching for scale",
+      "Secure authentication & authorization model",
+    ],
+    imageUrl:
+      "https://images.unsplash.com/photo-1521790361543-f645cf042ec4?auto=format&fit=crop&q=80&w=800",
+    stats: { label: "Active Users Served", value: "10000+ Scalable" },
+    status: "Live (Mobile App In Development)",
+    link: "https://user.staffsync.ca",
+  },
   {
     id: "p5",
     title: "MansionHub E-Commerce",
@@ -89,10 +133,14 @@ export const PROJECTS: Project[] = [
       "This fullstack e-commerce application is built using the MERN stack. Seamlessly integrating MongoDB, Express.js, React.js, and Node.js, this platform empowers clothing brands to create, manage, and scale online stores with ease. Includes user authentication, product management, and optimized cart flows.",
     category: "SaaS",
     clientSector: "Retail / Fashion",
-    tags: ["MongoDB", "Express", "React", "Node.js", "JWT"],
+    tags: ["MongoDB", "Express", "React", "Node.js", "Cloudinary"],
     features: ["User Auth", "Product Management", "Shopping Cart"],
     techHighlights: [
-      "MERN Integration",
+      "User Portal",
+      "Admin Portal",
+      "Dashboard Highlighting",
+      "Inventory Mangement",
+      "MERN Stack",
       "Scalable Schema Design",
       "Responsive UX",
     ],
@@ -110,38 +158,19 @@ export const PROJECTS: Project[] = [
       "This fullstack web application is designed to replicate Notion's iconic editor features. It supports a full range of editing capabilities and allows data to be saved and retrieved just like in Notion, featuring a complex hierarchical state management.",
     category: "Frontend",
     clientSector: "Productivity",
-    tags: ["React", "Node.js", "PostgreSQL", "Tailwind", "Zustand"],
+    tags: ["NextJs", "Node.js", "PostgreSQL", "Tailwind", "Zustand"],
     features: ["Block Editor", "Rich Text Sync", "Infinite Nesting"],
     techHighlights: [
       "Recursive Data Rendering",
       "Optimistic UI",
-      "Real-time Persistence",
+      "Persistence",
     ],
     imageUrl:
       "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=800",
     stats: { label: "Clone", value: "nonotion.mansionhub.in" },
     link: "https://nonotion.mansionhub.in",
   },
-  {
-    id: "p1",
-    title: "Nexus E-Commerce Engine",
-    description:
-      "Headless commerce platform with real-time inventory and global scaling.",
-    longDescription:
-      "A massive headless commerce backend built with NestJS and a React frontend. It uses AWS Lambda for image processing and DynamoDB for high-speed catalog lookups.",
-    category: "SaaS",
-    clientSector: "Retail / Tech",
-    tags: ["React", "NestJS", "AWS Lambda", "DynamoDB", "Stripe"],
-    features: ["Headless Architecture", "Edge Computing", "Global Tax Engine"],
-    techHighlights: [
-      "Zustand for global state",
-      "Serverless image resizing",
-      "Multi-region failover",
-    ],
-    imageUrl:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800",
-    stats: { label: "Peak Load", value: "50k RPM" },
-  },
+
   {
     id: "p2",
     title: "SwiftLog Logistics Hub",

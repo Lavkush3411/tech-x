@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React from "react";
 
 export interface Project {
   id: string;
@@ -7,11 +6,12 @@ export interface Project {
   description: string;
   longDescription: string;
   tags: string[];
-  category: 'SaaS' | 'Backend' | 'Frontend' | 'Mobile' | 'Desktop';
+  category: "SaaS" | "Backend" | "Frontend" | "Mobile" | "Desktop";
   features: string[];
   imageUrl: string;
   link?: string;
   stats?: { label: string; value: string };
+  status?: string;
   techHighlights: string[];
   clientSector: string;
 }

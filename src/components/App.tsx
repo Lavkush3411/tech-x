@@ -58,16 +58,16 @@ const App: React.FC = () => {
             <Rocket className="w-4 h-4" /> Global Software Development Firm
           </div>
 
-          <h1 className="text-6xl md:text-6xl font-black text-white tracking-tighter mb-10 leading-[0.85] text-balance">
-            Your Partner in Modern{" "}
-            <span className="gradient-text">High-Velocity Web and App </span>{" "}
+          <h1 className="text-6xl md:text-6xl font-black text-white tracking-tighter mb-14 leading-[0.85] text-balance">
+            Your Partner in {" "}
+            <span className="gradient-text">Modern Web and App </span>{" "}
             Development
           </h1>
 
           <p className="text-xl md:text-3xl text-slate-400 mb-14 max-w-4xl mx-auto leading-relaxed font-medium">
             Distributed Power. Global Scale. We deliver{" "}
             <span className="text-white">React</span> frontends,{" "}
-            <span className="text-white">express/NestJs</span> backend engines,
+            <span className="text-white">Express/NestJs</span> backend engines,
             and enterprise <span className="text-white">AWS</span> clouds.
           </p>
 
@@ -128,6 +128,13 @@ const App: React.FC = () => {
               business. We provide a rigorous engineering approach that
               prioritizes performance, security, and long-term maintainability.
             </p>
+            <p className="text-xl text-slate-400 mb-12 leading-relaxed">
+              At TechX, we specialize in delivering innovative web and mobile
+              app solutions that help businesses thrive in the digital age. Our
+              team is skilled in developing scalable and high-performance
+              applications that are tailored to meet your unique needs.
+            </p>
+
             <div className="space-y-8">
               {[
                 {
@@ -223,6 +230,18 @@ const App: React.FC = () => {
               <p className="text-xl text-slate-400 leading-relaxed">
                 Specialized in modern web and mobile stacks, focusing on the
                 core technologies that drive business growth.
+                From responsive web apps to feature-rich mobile apps, we
+                leverage the latest technologies to create seamless user
+                experiences that drive engagement and growth. We work closely
+                with our clients to ensure our solutions align with their
+                business goals, providing both functionality and usability.
+              </p>
+              <br></br>
+              <p className="text-xl text-slate-400 mb-12 leading-relaxed">
+                {" "}
+                Whether you’re looking to build a new app or improve an existing
+                one, TechX is here to turn your ideas into impactful digital
+                products.
               </p>
             </div>
             <div className="flex gap-4">
