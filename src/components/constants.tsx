@@ -370,7 +370,7 @@ export const TESTIMONIALS: Testimonial[] = [
   // },
 ];
 
-import { Github, Linkedin, Mail, Globe } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export const SOCIAL_LINKS = [
   {
